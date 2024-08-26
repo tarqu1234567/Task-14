@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    width: 100%;
+}
+
+.header .logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(255, 21, 0);
+    padding-left: 50px;
+
+}
+
+
+
+.header .logo span {
+
+    color: rgb(243, 137, 128);
+
+}
+
+.header nav {
+    padding-right: 50px;
+}
+
+.header ul {
+    display: flex;
+    gap: 80px;
+
+    list-style: none;
+    margin-left: 520px;
+
+}
+
+
+
+.header ul a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+
+.icon {
+    display: none;
+
+}
+
+.main {
+    background-image: url(./image-main.jpg);
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* gap: 10px; */
+    padding: 10px 50px;
+    margin-top: 20px;
+
+}
+
+.cards .card-images {
+    width: 90%;
+    margin: auto;
+}
+
+
+.cards .card-images img {
+    width: 190px;
+    margin: auto;
+}
+
+.contanet {
+    display: flex;
+    gap: 50px;
+    padding: 30px 50px;
+}
+
+.contanet .text-content h1 {
+    color: red;
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+.contanet .text-content .btn-2 {
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(255, 38, 0);
+    margin-top: 10px;
+    color: wheat;
+}
+
+.images-cardss {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: 30px;
+    margin-left: 40px;
+    gap: 30px;
+
+
+}
+
+.images-cardss .card-img img {
+    width: 270px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 64, 0);
+    color: aliceblue;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.footer .foo-buttom {
+    width: 80%;
+    margin: auto;
+
+}
+
+.footer .foo-buttom h4 {
+    padding-bottom: 20px;
+}
+
+@media (min-width:767px) and (max-width:992px) {
+    .icon {
+        display: block;
+        margin-right: 70px;
+        font-size: 30px;
+    }
+
+    .header ul li {
+        display: none;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+
+    .cards .card-images img {
+        width: 90%;
+    }
+
+    .contanet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .images-cardss {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .images-cardss .card-img img {
+        width: 90%;
+
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+}
+
+@media (min-width:0px) and (max-width:767px) {
+    .icon {
+        display: block;
+        margin-right: 70px;
+        font-size: 30px;
+    }
+
+    .header ul li {
+        display: none;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        width: 100%;
+    }
+
+    .cards .card-images img {
+        width: 90%;
+    }
+
+    .contanet {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+
+
+    }
+
+    .images-cardss {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+
+    }
+
+    .images-cardss .card-img img {
+        width: 90%;
+
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
